@@ -1,6 +1,6 @@
 <launch>
 
-  <arg name="multimap_file" default="$(find utexas_gdc)/maps/real/multimap/multimap.yaml" />
+  <arg name="multimap_file" default="$(find bu_eb)/maps/multimap/multimap.yaml" />
   <arg name="rviz" default="true"/>
   <arg name="gui" default="true"/>
 

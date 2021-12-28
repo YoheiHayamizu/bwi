@@ -32,6 +32,7 @@
   <exec_depend>segbot_navigation</exec_depend>
   <exec_depend>segbot_simulation_apps</exec_depend>
   <exec_depend>utexas_gdc</exec_depend>
+  <exec_depend>bu_eb</exec_depend>
 
   <test_depend>roslaunch</test_depend>
 
