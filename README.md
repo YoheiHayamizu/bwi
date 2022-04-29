@@ -1,14 +1,12 @@
 # bwi
 
-This repository contains top-level ROS packages for the Building Wide
-Intelligence (BWI) project of the University of Texas at Austin
-Computer Science Department.
+The Building Wide Intelligence (BWI) is a project of the University of Texas at Austin to develop fully autonomous mobile robots that can become a permanent part of a building’s environment. 
+The BWI project provides ROS packages, which are maintained on Github. 
+
 
 ## BWI Repository Hierarchy
 
-Packages contained in various released BWI repostories may depend on
-other packages at the same or lower levels.  Dependencies on packages
-from higher-level repositories are not permitted.
+One of the repositories, bwi, contains top-level ROS packages for the BWI project so that the repository can maintain packages contained in various released BWI repositories, which may depend on other packages at the same or lower levels.
 
 From top to bottom, the released repositories are:
 
@@ -16,7 +14,16 @@ From top to bottom, the released repositories are:
  * [segbot](http://wiki.ros.org/segbot)
  * [bwi_common](http://wiki.ros.org/bwi_common)
 
+## System Specification
+```
+Ubuntu 18.04
+ROS version: melodic
+Python version: 2.7 (ROS melodic does not support python 3, however, you can use python 3 code-base on python 2)
+```
+
 ## Installation
+You can find the documentation of installation maintained for the AIR Lab [here](https://docs.google.com/document/d/1yAzUIvP_1WJ0NI6G4xmJ8DqDjguHFxHpCKpSC1FQW28/edit#heading=h.lg96moxe7p4w).
+
 
 ### From Source
 
@@ -49,10 +56,10 @@ $ export ROS_DISTRO=melodic
 
 Next, clone the source repositories:
 ```
-$ source /opt/ros/$ROS_DISTRO/setup.bash
-$ mkdir -p ~/catkin_ws/src
-$ cd ~/catkin_ws
-$ wstool init src https://raw.githubusercontent.com/utexas-bwi/bwi/master/rosinstall/$ROS_DISTRO.rosinstall
+$ source /opt/ros/melodic/setup.bash
+$ mkdir -p ~/segbot_ws/src
+$ cd ~/segbot_ws
+$ wstool init src https://raw.githubusercontent.com/YoheiHayamizu/bwi/bu-devel/rosinstall/melodic.rosinstall
 ```
 
 Install all dependencies:
